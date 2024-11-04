@@ -1,15 +1,19 @@
-const hamburger = document.getElementById('hamburger');
-        const closeBtn = document.getElementById('close');
-        const menu = document.getElementById('menu');
+const hamburger=document.getElementById('hamburger');
+const close=document.getElementById('close');
+const menu=document.getElementById('menu');
+const body=document.getElementById('body');
 
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            hamburger.classList.toggle('hidden');
-            closeBtn.classList.toggle('hidden');
-        });
 
-        closeBtn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            hamburger.classList.toggle('hidden');
-            closeBtn.classList.toggle('hidden');
-        });
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('hidden'); 
+    close.classList.toggle('hidden');     
+    menu.classList.toggle('hidden');     
+    body.classList.toggle('overflow-hidden');
+});
+
+close.addEventListener('click', () => {
+    hamburger.classList.toggle('hidden'); 
+    close.classList.toggle('hidden');    
+    menu.classList.toggle('hidden');     
+    body.classList.toggle('overflow-hidden'); 
+});

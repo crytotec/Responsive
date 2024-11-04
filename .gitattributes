@@ -1,0 +1,5 @@
+# Set the default behavior to automatically normalize line endings.
+* text=auto
+
+# Explicitly set text files to use LF in the repo and convert to CRLF on checkout in Windows
+*.css text eol=lf

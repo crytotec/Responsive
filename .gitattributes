@@ -1,0 +1,12 @@
+# Set the default behavior for text files
+* text=auto
+
+# Explicitly define line endings for certain file types
+*.sh text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Use CRLF for Windows batch files
+*.bat text eol=crlf
